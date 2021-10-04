@@ -1,0 +1,17 @@
+# This is a jenkins trigger workflow 
+
+name: trigger jenkins job
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger single Job
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "https://vmax-jenkins01.cec.lab.emc.com/job/AUTOMATED_CI/job/CSI-PowerMax/job/CSI-Go-Pipeline1/"
+        user: "svc_vmaxjenkins"
+        token: "TrWX*LY_DueN9C2%+zhAI5?s"
+        job: "/CSI-Go-Pipeline1"
