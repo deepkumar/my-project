@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: trigger single Job
-      uses: deepkumarb/my-project@main
+      uses: deepkumar/my-project@main
       with:
         url: "https://vmax-jenkins01.cec.lab.emc.com/job/test_external_repo/"
         user: "svc_vmaxjenkins"
