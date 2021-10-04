@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: trigger single Job
-      uses: dell/dell-csi-extensions@master
+      uses: dell/dell-csi-extensions@main
       with:
         url: "https://vmax-jenkins01.cec.lab.emc.com/job/AUTOMATED_CI/job/CSI-PowerMax/job/CSI-Go-Pipeline1/"
         user: "svc_vmaxjenkins"
