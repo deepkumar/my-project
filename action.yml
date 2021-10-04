@@ -1,0 +1,19 @@
+name: 'Trigger Jenkins Multiple Jobs'
+description: 'Triggering Jenkins Job through the API'
+author: 'Deepkumarb'
+inputs:
+  url:
+    description: 'https://vmax-jenkins01.cec.lab.emc.com/job/test_external_repo/'
+  user:
+    description: 'svc_vmaxjenkins'
+  token:
+    description: '2cb9ad410703bb5d30bd42cd8ab15da257c9dacad9d5d217dc8ef0c2cfaaf829'
+  job:
+    description: 'test_external_repo'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'check-circle'
+  color: 'green'
