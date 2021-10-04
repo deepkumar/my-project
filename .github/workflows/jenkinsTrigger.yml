@@ -11,7 +11,7 @@ jobs:
     - name: trigger single Job
       uses: dell/dell-csi-extensions@main
       with:
-        url: "https://vmax-jenkins01.cec.lab.emc.com/job/AUTOMATED_CI/job/CSI-PowerMax/job/CSI-Go-Pipeline1/"
+        url: "https://vmax-jenkins01.cec.lab.emc.com/job/test_external_repo/"
         user: "svc_vmaxjenkins"
-        token: "TrWX*LY_DueN9C2%+zhAI5?s"
-        job: "/CSI-Go-Pipeline1"
+        token: "2cb9ad410703bb5d30bd42cd8ab15da257c9dacad9d5d217dc8ef0c2cfaaf829"
+        job: "test_external_repo"
